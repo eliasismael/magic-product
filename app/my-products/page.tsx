@@ -1,8 +1,9 @@
-import { getProducts } from "../functions/getProducts";
+"use client";
+import { useProducts } from "../context/ProductsContext";
 import MyProducts from "./MyProducts";
 
-export default async function MyProductsPage() {
-  const products = await getProducts();
+export default function MyProductsPage() {
+  const { products } = useProducts();
 
   return <MyProducts products={products} />;
 }

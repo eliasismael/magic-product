@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion";
 import { useMemo } from "react";
-
 import { ProductCard } from "../components/ProductCard";
 import { exportProducts } from "../functions/exportCSV";
 import { AddProduct } from "../components/shared/AddProduct";

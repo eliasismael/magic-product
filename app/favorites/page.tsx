@@ -1,8 +1,9 @@
+"use client";
 import Favorites from "./Favorites";
-import { getProducts } from "../functions/getProducts";
+import { useProducts } from "../context/ProductsContext";
 
-export default async function FavoritesPage() {
-  const products = await getProducts();
+export default function FavoritesPage() {
+  const { products } = useProducts();
 
   return <Favorites products={products} />;
 }
